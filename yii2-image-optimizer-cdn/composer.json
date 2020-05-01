@@ -1,0 +1,21 @@
+{
+    "name": "awimage/yii2-image-optimizer-cdn",
+    "description": "Awimage Image Optimizer CDN Widget",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Pablo Nuñez",
+            "email": "pablo@awimage.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "awimage\\imageOptimizer\\": ""
+        }
+    }
+}

@@ -28,7 +28,7 @@ use yii\helpers\Html;
 class Img extends \yii\base\Widget
 {
 
-    const ENDPOINT_URL = "https://cdn.awimage.com/v1";
+    const ENDPOINT_URL = "https://cdn.awimage.com/v1/resize";
     public $MaxWidthForMobile = '480';
     public $MaxWidthForTablet = '920';
     public $MaxWidthForDesktop = '1920';

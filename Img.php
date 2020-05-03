@@ -80,7 +80,6 @@ class Img extends \yii\base\Widget
         return join([
             self::ENDPOINT_URL,
             $size,
-            '/withoutEnlargement:true',
             '/',
             $src,
         ]);

@@ -57,11 +57,11 @@ class Img extends \yii\base\Widget
     {
         $mobile_detect = new AWMobileDetect();
         if ($mobile_detect->isTablet()) {
-            return "/width/$this->MaxWidthForTablet";
+            return "width/$this->MaxWidthForTablet";
         } elseif ($mobile_detect->isMobile()) {
-            return "/width/$this->MaxWidthForMobile";
+            return "width/$this->MaxWidthForMobile";
         } else {
-            return "/width/$this->MaxWidthForDesktop";
+            return "width/$this->MaxWidthForDesktop";
         }
     }
 
@@ -77,10 +77,9 @@ class Img extends \yii\base\Widget
     {
         $this->TrySetProperties($config);
         $size = $this->GetSize();
-        return join([
+        return join('/',[
             self::ENDPOINT_URL,
             $size,
-            '/',
             $src,
         ]);
     }

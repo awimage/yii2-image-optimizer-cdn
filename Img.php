@@ -1,10 +1,30 @@
 <?php
+/**
+ * @link https://www.awimage.com/
+ * @copyright Copyright (c) 2020 Think Y LLC
+ * @license https://www.awimage.com/license/
+ */
+
 
 namespace awimage\imageOptimizer;
 
 use Detection\MobileDetect as AWMobileDetect;
 use yii\helpers\Html;
 
+
+/**
+ * Img is the html tag img widget for awimage cdn service
+ *
+ * This tag allow to to size optimized images for any device based on their window size
+ * This class detect the type of device (Mobile|Tablet|Desktop) and use the awimage service
+ * to resize and deploy over the CDN the new image improving your performance when delivers
+ * images to your clients
+ *
+ * For more details and usage information visit our github page
+ *
+ * @author Pablo Nuñez <pablo@awimage.com>
+ * @since 1.0
+ */
 class Img extends \yii\base\Widget
 {
 
@@ -47,12 +67,11 @@ class Img extends \yii\base\Widget
 
     private function TrySetProperties($config = [])
     {
-        $this->MaxWidthForMobile = $config["MaxWidthForMobile "] ?? $this->MaxWidthForMobile;
-        $this->MaxWidthForTablet = $config["MaxWidthForTablet "] ?? $this->MaxWidthForTablet;
+        $this->MaxWidthForMobile = $config["MaxWidthForMobile"] ?? $this->MaxWidthForMobile;
+        $this->MaxWidthForTablet = $config["MaxWidthForTablet"] ?? $this->MaxWidthForTablet;
         $this->MaxWidthForDesktop = $config["MaxWidthForDesktop"] ?? $this->MaxWidthForDesktop;
         $this->options = $config["options"] ?? $this->options;
     }
-
 
     public function getUrl($src, $config = [])
     {

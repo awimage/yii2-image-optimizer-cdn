@@ -6,6 +6,11 @@ Awimage Image Optimizer CDN
 
 Awimage Image Optimizer CDN Widget
 
+Service.
+-------
+this widget is prepared to be used with Awimage services, right now on testing stage,  if you want to be part and help us test it please let us know at awimage@coderteams.com.
+
+
 Installation
 ------------
 
@@ -26,10 +31,23 @@ or add
 to the require section of your `composer.json` file.
 
 
+
+
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+Once the extension is installed, simply use it in your code by:
+
+
 
 ```php
-<?= \awimage\imageOptimizer\AutoloadExample::widget(); ?>```
+<?= \awimage\imageOptimizer\Img::widget([
+    'src' => 'https://www.yourdomain.com/yourimage.jpg',
+    'MaxWidthForMobile' => '460',
+    'MaxWidthForTablet' => '760',
+    'MaxWidthForDesktop' => '1280',
+    'options' => [
+        'alt' => 'Your super awesome alternative text'
+        ]
+      ]); ?>
+    ```

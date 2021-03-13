@@ -48,6 +48,7 @@ class Img extends \yii\base\Widget
         $source = $this->getUrl($src, $config);
         return Html::img($source,
             array_merge(
+                ['loading' => 'lazy'],
                 ['onerror' => "this.onerror=null;this.src='" . $src . "';"],
                 $this->options)
         );

@@ -2,7 +2,7 @@ Awimage Image Optimizer CDN
 ===========================
 
 [![Latest Stable Version](https://img.shields.io/packagist/v/awimage/yii2-image-optimizer-cdn.svg)](https://packagist.org/packages/awimage/yii2-image-optimizer-cdn)
-[![Total Downloads](https://img.shields.io/packagist/dt/awimage/yii2-image-optimizer-cdn.svg)](https://packagist.org/packages/awimage/yii2-image-optimizer-cdn)
+[![Total Downloads](https://img.shields.io/packagist/dt/awimage/yii2-image-optimizer-cdn.svg)](https://packagist.org/packages/awimage/yii2-image-optimizer-cdn) [![Join the chat at https://gitter.im/awimage/plugin-Yii2](https://badges.gitter.im/awimage/plugin-Yii2.svg)](https://gitter.im/awimage/plugin-Yii2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Awimage Image Optimizer CDN Widget
 
